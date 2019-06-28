@@ -19,6 +19,7 @@ struct ContentView : View {
     
         VStack(alignment: .leading) {
             
+            // Toolbar
             HStack {
                 Button(action: {}) {
                     Text("메뉴")
@@ -33,11 +34,18 @@ struct ContentView : View {
                 }.padding(.horizontal)
             }.frame(width: full_width, height: 50)
             
+            // Map View
             HStack(alignment: .top) {
-                Text("맵 라인")
+                Text("Map View")
                     .font(.subheadline)
                 
-                }.frame(width:full_width, height: nil)
+            }.frame(width:full_width, height: 400)
+            
+            // Notification Stack
+            HStack(alignment: .center) {
+                Text("알림 센터").font(.headline).bold().padding(.leading)
+                Spacer()
+            }.frame(width: full_width, height : 30)
             
         }
         .padding()

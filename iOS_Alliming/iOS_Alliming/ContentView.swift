@@ -42,10 +42,16 @@ struct ContentView : View {
             }.frame(width:full_width, height: 400)
             
             // Notification Stack
-            HStack(alignment: .center) {
-                Text("알림 센터").font(.headline).bold().padding(.leading)
+            VStack {
+                
+                HStack(alignment: .center) {
+                    Text("알림 센터").font(.headline).bold().padding(.leading)
+                    Spacer()
+                    }.frame(width: full_width, height : 30)
                 Spacer()
-            }.frame(width: full_width, height : 30)
+                
+                
+                }.frame(width: full_width, height: 200)
             
         }
         .padding()

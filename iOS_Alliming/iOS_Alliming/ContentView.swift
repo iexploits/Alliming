@@ -17,6 +17,7 @@ struct ContentView : View {
     
     var body: some View {
     
+        ScrollView {
         VStack(alignment: .leading) {
             
             // Toolbar
@@ -54,8 +55,7 @@ struct ContentView : View {
                 }.frame(width: full_width, height: 200)
             
         }
-        .padding()
-        
+        }
     }
 }
 
